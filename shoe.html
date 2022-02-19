@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product 1</title>
+
+    <!-- Bootstrap link. -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        h1 {
+            position: relative;
+            animation-name: animation;
+            animation-duration: 1s;
+        }
+        @keyframes animation {
+            0%   {opacity: 0; left:7.5%; top: 302px;}
+            50%   {opacity: 0; left:7.5%; top: 302px;}
+            100% {opacity: 1; left: 7.5%; top: 300px}
+        }
+
+    </style>
+</head>
+    
+
+
+
+<!-- Navbar. -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    
+    <!-- Navbar logo. -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Company Logo" width="50" height="50">
+            </a>
+        </div>
+    </nav>
+    
+    <!-- Navbar links. -->
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Company</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="product1.html">Product 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="product2.html">Product 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="product3.html">Product 3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</nav>
+
+<body>
+    <div>
+            <img class="mySlides" src="https://images.unsplash.com/photo-1516478177764-9fe5bd7e9717?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fHNob2VzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="first product" style="width: 100%; height: 460px; align-items: center; object-fit: cover; display:block; margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto;">
+            <img class="mySlides" src="https://i.ytimg.com/vi/PpK3LaGnb_s/maxresdefault.jpg" alt="first product" style="width: 100%; height: 460px; align-items: center; object-fit: cover; display:block; margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto;">
+            <img class="mySlides" src="https://www.runningxpert.com/media/wysiwyg/Artikler/2020/IMG_2250.jpg" alt="first product" style="width: 100%; height: 460px; align-items: center; object-fit: cover; display:block; margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto;">
+        
+        <h1 class="text">OUR SHOE COLLECTION</h1>
+        <script>
+            var slideIndex = 0;
+            carousel();
+
+            function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {slideIndex = 1}
+            x[slideIndex-1].style.display = "block";
+            setTimeout(carousel, 4000); 
+            }
+        </script>
+    </div>
+    <div display="absolute";>
+        <a href="#first-div" class="button button" ><i class="arrow down"></i></a>
+        <br>
+    </div>
+    <div id="first-div">
+        <div style="display: flex; float: right; position: relatve; padding-top: 5%; padding-right: 2.5%; top: 5%"><img src="https://i.pinimg.com/originals/6c/51/6b/6c516b2985fab0ba31e19fdf5a52eb66.jpg" alt="" style="width: 600px; object-fit: cover;"></div>
+        <h2 style="padding-top: 15%; position: relative; padding-left: 5%">Nike</h2>
+        <br>
+        <p style="text-align: left; padding-bottom: 15%; position: relative; left: 5%; width: 25%">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint voluptate quos ratione neque in vel itaque, omnis adipisci tempora aliquam modi accusamus aspernatur dignissimos minima, saepe quibusdam necessitatibus aliquid veniam.</p>
+    </div>
+    <div id="second-div">
+        <div style="display: flex; justify-content: left; float: left; padding-top: 2.5%"><img src="https://i.insider.com/59c14b709803c50d098b68e0?width=1000&format=jpeg&auto=webp" alt="picture of shoe" style="width: 70%"></div>
+        <h2 style="padding-top: 10%">Vans</h2>
+        <br>
+        <p style="text-align: left; padding-bottom: 15.5%;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor libero sed, debitis architecto placeat minus earum ab voluptatum sequi nam asperiores laboriosam aspernatur facere ratione ipsa sit reiciendis illum similique.</p>
+    </div>
+    <div id="third-div">
+        <div style="display: flex; float: right; position: relatve; padding-top: 5%; padding-right: 2.5%; top: 5%"><img src="https://sneakernews.com/wp-content/uploads/2015/09/adidas-ultra-yeezy-boost-custom-01.jpg" alt=""></div>
+        <h2 style="padding-top: 15%; position: relative; padding-left: 5%">Adidas</h2>
+        <br>
+        <p style="text-align: left; padding-bottom: 15%; position: relative; left: 5%; width: 25%">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint voluptate quos ratione neque in vel itaque, omnis adipisci tempora aliquam modi accusamus aspernatur dignissimos minima, saepe quibusdam necessitatibus aliquid veniam.</p>
+    </div>
+    <div id="fourth-div">
+        
+        
+            
+            <img src="https://i.pinimg.com/originals/44/85/4e/44854e46e11a5a46b72c0908fdbdee62.jpg" alt="picture" style= "width: 50%; height: 100%; object-fit: cover" align: right>
+            
+            <h2 class="order-sign" style="padding-top: 10%; left: 60%; display: inline;">ORDER YOURS NOW</h2>
+            
+            
+            
+                <button class="btn-choice" value="$170" style="width: 100px; position: absolute; left: 59%; height: auto; padding-top: 17.5%"><img src="https://static.nike.com/a/images/t_prod_ss/w_960,c_limit,f_auto/ti61nslwh35whirn9drr/womens-air-jordan-i-twist-release-date.jpg" alt="Nike Air Jordan 1" style="width: 100%; height: 17.5%; object-fit: cover;"></button>
+                <button class="btn-choice" value="$60" style="width: 100px; position: absolute; left: 69%; height: auto; padding-top: 17.5%"><img src="https://images.vans.com/is/image/Vans/D3HY28-HERO?$583x583$" alt="Vans Old Skool" style="width: 100%"></button>
+                <button class="btn-choice" value="$180" style="width: 100px; position: absolute; left: 79%; height: auto; padding-top: 17.5%"><img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/d7b701392efc440db995ac840136d86f_9366/Ultraboost_21_Primeblue_Shoes_Blue_FX7729_01_standard.jpg" alt="addidas Ultraboost" style="width: 100%"></button>
+                            
+               
+                <script type="text/javascript">
+                    $(".btn-choice").on("click", function () {
+                        var shoePick = $(this).val();
+                        console.log("price:" + shoePick);  
+                        document.getElementById("result").innerHTML = "Price: " + shoePick;
+                    })
+                </script>
+                <h5 id="result" class="order-text">Price: $0</h5>
+            
+            
+    </div>
+</body>
+</html>
